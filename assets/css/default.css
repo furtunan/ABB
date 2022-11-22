@@ -1,0 +1,13 @@
+*html{
+    margin: 0px;
+}
+body{
+    margin: 0px;
+}
+
+.custom-red{
+    color: #FF000F;
+}
+.custom-red-bk{
+    background: #FF000F;
+}
