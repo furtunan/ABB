@@ -1,147 +1,85 @@
-   header{
-    position: fixed;
-    width: 100%;
-    left: 0;
-    
-   }
-   .top-bar {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        margin-top:100px;
-        flex-direction: row;
-        flex-wrap: nowrap;
-        align-items: center;
-        height: 80px;
-        width: 100%;
-        max-width:1196px;
-        
-        color: #646464;
-        z-index: 10;
-        background-color: #fff;
-        margin: 0 auto;
-    }
-    .top-bar-navigation {
-        display: flex;
-        padding: 0 15px;
-    }
-    .navigation-item{
-        display: flex;
-        list-style: none;
-        align-items: center;
-        justify-content: center;
-    }
-    .menu-item-has-children a {
-        padding-right: 10px;
-    }
-    .homeicon {
-        background-image: url('/wp-content/uploads/2022/11/pngfind.com-angle-wings-png-6273703.png');
-        background-position: right center;
-        background-repeat: no-repeat;
-        background-size: 14px;
-        background-position: 98% 55%;
-        }
-    ul.sub-menu.submenu-open {
-        position: absolute;
-        left: 0px;
-        right: 0px;
-        top:60px;
-        margin-left: auto;
-        margin-right: auto;
-        left: 184px;
-        text-align: center;
-    }
-    
-    ul.sub-menu {
-        display: none;
-    }
-    ul.sub-menu.submenu-open{
-        display: initial;
-    }
+/* Header/Navbar */
+header{
+  position: fixed;
+  width: 100%;
+  left: 0;    
+}
+.nav-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  max-width:1196px;    
+  height: 80px;
+  margin: 0 auto;
+}
+.nav-bar--navigation {
+  display: flex;
+  padding: 0 15px;
+}
+.nav-bar--navigation-item{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+}
 
-    .menu-item {
-        padding: 10px;
-        font-size: 18px;
-    }
-    .menu-item a{
-        text-decoration: none;
-        color:#262626;
-    }
-    ul#menu-header-action {
-        margin: 0px;
-        padding: 0px;
-    }
-  /* @media (max-width: 768px) {
-    header.top-bar #topBarNavToggle {
-      display: block;
-    }
-  }
-  header.top-bar .top-bar-navigation {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    margin-left: auto;
-    height: 100%;
-    width: 50%;
-  }
-  @media (max-width: 768px) {
-    header.top-bar .top-bar-navigation {
-      max-height: 0;
-      flex-direction: column;
-      position: absolute;
-      top: 60px;
-      left: 0;
-      width: 100%;
-      overflow: hidden;
-      -webkit-transition: max-height 150ms linear;
-      -moz-transition: max-height 150ms linear;
-      -ms-transition: max-height 150ms linear;
-      -o-transition: max-height 150ms linear;
-      transition: max-height 150ms linear;
-    }
-    header.top-bar .top-bar-navigation.open {
-      max-height: 999px;
-      overflow: visible;
-    }
-  }
-  header.top-bar .top-bar-navigation .navigation-item {
-    display: flex;
-    text-decoration: none;
-    background-color: #e6e6e6;
-    width: 100%;
-    height: 60px;
-    color: #646464;
-    line-height: 60px;
-    padding: 0 15px;
-    text-decoration: none;
-    text-align: center;
-  }
-  header.top-bar .top-bar-navigation .navigation-item a {
-    color: inherit;
-    text-decoration: inherit;
+/* Menu list */
+.menu-item {
+  padding: 10px;
+  font-size: 18px;
+}
+.menu-item a{
+  text-decoration: none;
+  color:#262626;
+}
+.nav-bar--homeicon {
+  background-image: url('/wp-content/uploads/2022/11/pngfind.com-angle-wings-png-6273703.png');
+  background-position: right center;
+  background-repeat: no-repeat;
+  background-size: 14px;
+  background-position: 98% 55%;
+}
+
+/* Submenu */
+.menu-item-has-children a {
+  padding-right: 10px;
+}
+ul.sub-menu.submenu-open {
+  position: absolute;
+  left: 100px;
+  right: 0px;
+  top:60px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+ul.sub-menu {
+  display: none;
+}
+ul.sub-menu.submenu-open{
+  display: initial;
+}
+ul#menu-action {
+  margin: 0px;
+  padding: 0px;
+}
+#navBarNavToggle {
+  display:none;
+}
+
+@media (max-width: 768px) {
+  #navBarNavToggle {
     display: block;
   }
-  header.top-bar .top-bar-navigation .navigation-item a i {
-    display: none;
-  }
-  @media (max-width: 768px) {
-    header.top-bar .top-bar-navigation .navigation-item a i {
-      display: inline;
-    }
-  }
-  header.top-bar .top-bar-navigation .navigation-item:hover {
-    background-color: #cdcdcd;
-  }
-  header.top-bar .top-bar-navigation .navigation-item.has-children {
-    position: relative;
-    display: block;
-  }
-  header.top-bar .top-bar-navigation .navigation-item.has-children .navigation-submenu {
+  header.nav-bar .nav-bar--navigation {
     max-height: 0;
+    flex-direction: column;
     position: absolute;
+    top: 60px;
     left: 0;
-    top: 100%;
-    width: inherit;
+    width: 100%;
     overflow: hidden;
     -webkit-transition: max-height 150ms linear;
     -moz-transition: max-height 150ms linear;
@@ -149,16 +87,8 @@
     -o-transition: max-height 150ms linear;
     transition: max-height 150ms linear;
   }
-  header.top-bar .top-bar-navigation .navigation-item.has-children .navigation-submenu.submenu-open {
+  header.nav-bar .nav-bar--navigation.open {
     max-height: 999px;
+    overflow: visible;
   }
-  @media screen and (min-width: 768px) {
-    header.top-bar .top-bar-navigation .navigation-item.has-children .navigation-submenu.submenu-open {
-      max-height: 0;
-    }
-  }
-  @media screen and (min-width: 768px) {
-    header.top-bar .top-bar-navigation .navigation-item.has-children:hover .navigation-submenu {
-      max-height: 999px;
-    }
-  } */
+}

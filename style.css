@@ -7,3 +7,101 @@ Version: 1.0.0
 Text Domain: ABB
 License: GNU v3 or Later
 **/
+
+/* Hero */
+.container-hero {
+    background-size: cover;
+    background-position: center;
+    width: 100wh;
+    height: 600px;
+
+}
+  
+.content-hero {
+    width: 100%;
+    color: #fff;
+    max-width: 1196px;
+    margin: auto;
+}
+
+.box-hero{
+    margin-top:80px;
+    max-width: 820px;
+}
+
+/* Posts native Wp - the_content() */
+.content-post{
+    font-weight: 300;
+    padding:60px 0;
+}
+
+/* Promo */
+.promo{
+    padding: 60px 0;
+}
+.promo-img{
+    margin-left: -180px;
+}
+.promo-second{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin:30px 0;
+}
+
+/* Latest Post */
+.latest--box{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin:30px 0;
+}
+.latest--post{
+    margin-top:60px;
+}
+.latest--post button{
+    margin-top:24px;
+}
+
+/* ZIG ZAG */
+.container--zigzag {
+    margin-bottom: 16px;
+    margin:60px 0;
+}
+.container--zigzag-box img {
+    width:100%;
+    max-width: 380px;
+    object-fit: cover;
+}
+.container--zigzag-right {
+    flex-direction: row-reverse;
+}
+
+/* Media Queries */
+@media screen and (max-width: 1195px) {
+  
+    .entry-content {
+      margin: 0 20px;
+    }
+    .content-hero, #promo .container{
+      padding:0 20px;
+    }
+    div#promo {
+      margin: 0px -20px;
+    }
+    .latest-post .container-flex{
+      display: block;
+    }
+    .zigzag .right {
+      flex-direction: initial;
+    }
+  }
+  
+  @media screen and (max-width: 768px) {
+    #zigzag{
+      display: block;
+    }
+    #promo .container-flex{
+      display: block;
+    }
+  }

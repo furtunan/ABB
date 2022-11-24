@@ -1,3 +1,4 @@
+/* Reset */
 *html{
     margin: 0px;
 }
@@ -5,9 +6,83 @@ body{
     margin: 0px;
 }
 
-.custom-red{
-    color: #FF000F;
+/* Typography */
+@font-face { font-family: 'Red Hat Display'; src: url(/wp-content/themes/abb/fonts/RedHatDisplay-VariableFont_wght.ttf); font-weight: normal; }
+
+body{
+    font-family: 'Red Hat Display', sans-serif;
+    font-size: 18px;
+    line-height: 27px;
+    font-weight:500;
+    color: #262626;
 }
-.custom-red-bk{
+
+h1{
+    font-size: 48px;
+    line-height: 56px;
+    font-weight:500;
+}
+
+h2{
+    font-size: 32px;
+    line-height: 36px;
+    font-weight:500;
+}
+
+.fw-bold{
+    font-weight:700;
+}
+
+
+/* Button */
+button{
+    width: max-content;
+    padding: 18px 32px;
+    border:1px solid #FF000F;
+    border-radius: 40px;
+    font-weight: 700;
+    color:#fff;
+}
+button:hover{
+    font-weight: 700;
+    background: #fff;
+    border:1px solid #FF000F;    
+    color:#FF000F;
+}
+
+/* Colors */
+
+.font-red{
+    color:#FF000F;
+}
+.font-white{
+    color:#fff;
+}
+.bk-white{
+    background-color: #fff;
+}
+.bk-grey{
+    background-color:#F0F0F0;
+}
+.bk-dark-grey{
+    background: #6E6E6E;
+}
+.bk-red{
     background: #FF000F;
+}
+
+@media screen and (max-width: 768px) {
+    body{
+        font-size: 16px;
+        line-height: 22px;
+    }
+    h1{
+        font-size: 38px;
+        line-height: 46px;
+    }
+    
+    h2{
+        font-size: 22px;
+        line-height: 28px;
+    }
 }

@@ -103,6 +103,7 @@ if ( ! function_exists( 'abb_setup' ) )  {
         // Styles
             wp_enqueue_style( 'default', get_template_directory_uri() . '/assets/css/default.css', [], wp_rand(), 'all' );
             wp_enqueue_style( 'main', get_template_directory_uri() . '/assets/css/main.css', [], wp_rand(), 'all' );
+            wp_enqueue_style( 'style', get_template_directory_uri() . '/style.css', [], wp_rand(), 'all' );
             wp_enqueue_style( 'header', get_template_directory_uri() . '/assets/css/header.css', [], wp_rand(), 'all' );
             wp_enqueue_style( 'footer', get_template_directory_uri() . '/assets/css/footer.css', [], wp_rand(), 'all' );
             wp_enqueue_style( 'hero-page', get_template_directory_uri() . '/assets/css/sections/hero.css', [], wp_rand(), 'all' );

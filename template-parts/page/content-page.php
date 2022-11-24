@@ -18,10 +18,11 @@
     <?php
         get_template_part( 'template-parts/page/sections/hero',);
     ?>
-    <div class="entry-content">
-
+    <div class="entry-content">        
+        <div class="container content-post">
+            <?php the_content(); ?>
+        </div>
         <?php
-            the_content();
             get_template_part( 'template-parts/page/sections/promo',);
             get_template_part( 'template-parts/page/sections/latest-post',);
             get_template_part( 'template-parts/page/sections/zigzag',);            

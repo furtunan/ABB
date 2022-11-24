@@ -3,13 +3,11 @@
  * Template page to display hero image in content-page.php
  **/
 ?>
-
-
 <?php
 $hero = get_field('hero');
 if( $hero ): ?>
     <div id="hero">
-        <div class="hero" style="background-image:url(<?php echo esc_url( $hero['image'] ); ?>)">
+        <div class="container-hero container-flex" style="background-image:url(<?php echo esc_url( $hero['image'] ); ?>)">
             <div class="content-hero">
                 <div class="box-hero">
                     <div class="text-line"></div>
